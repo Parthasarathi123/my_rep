@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Letter Spacing — Potion — Magic of CSS — Adam Schwartz</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <link rel="icon" href="/magic-of-css/favicon.ico">
+
+        <link rel="stylesheet" href="../../css/base.css">
+        <link rel="stylesheet" href="../../css/logo.css">
+        <link rel="stylesheet" href="../../css/chapter.css">
+        <link rel="stylesheet" href="../../css/potions.css">
+
+        <link rel="stylesheet" href="css/overflow-ellipsis.css">
+
+        <script src="//use.typekit.net/hlu4jhg.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+
+        <script src="../../js/chapters.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <a class="logo" href="/magic-of-css"><h1>The Magic of CSS</h1><div class="the-magic-of">The Magic Of</div><div class="css-rainbow"><div class="css-letter css-rainbow-c"><div class="rainbow"><div class="bands"></div></div></div><div class="css-letter css-rainbow-s css-rainbow-s-1"><div class="top-half"><div class="rainbow"><div class="bands"></div></div></div><div class="bottom-half"><div class="rainbow"><div class="bands"></div></div></div></div><div class="css-letter css-rainbow-s css-rainbow-s-2"><div class="top-half"><div class="rainbow"><div class="bands"></div></div></div><div class="bottom-half"><div class="rainbow"><div class="bands"></div></div></div></div></div></a>
+
+            <div class="chapter">
+                <h1>
+                    <span class="number">Potion</span>
+                    <span class="title">Letter Spacing</span>
+                </h1>
+
+                <p>When adding <code>letter-spacing</code> to some text, take note of the fact that the spacing is <em>added to the right of each letter, not just between letters</em>.</p>
+
+                <p>This means that if you <code>text-align: center</code> text which has been letter-spaced, you may want to add add a negative right margin to remove the letter spacing added there, such that the text stays centered. Another similar option is to add a left padding.</p>
+
+                <p>This is a subtle thing, but it’s extremely good to know.</p>
+
+                <style>
+                    .example {
+                        background: #eee;
+                        padding: 2em
+                    }
+
+                    .example div {
+                        font-size: 1.4em;
+                        text-transform: uppercase;
+                        text-align: center;
+                        letter-spacing: 1em
+                    }
+                </style>
+
+                <p><code>1em</code> letter-spacing with no left padding:</p>
+
+                <div class="example">
+                    <div>Page Title</div>
+                </div>
+
+                <p><code>1em</code> letter-spacing with <code>padding-left: 1em</code>:</p>
+
+                <div class="example">
+                    <div style="padding-left: 1em">Page Title</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
